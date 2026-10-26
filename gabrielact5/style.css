@@ -1,0 +1,117 @@
+.nav{
+background-color:rgb(31, 29, 29) ;
+display:flex;
+justify-content: center;
+gap: 60px;
+padding: 15px 0;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    background-image: url(D:\/yamaha-12-logo-png-transparent.png);
+}
+
+.box{
+    max-width: 700px;
+    margin: 20px;
+    background-color: #0D47F7;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px;
+    height: 700px;
+    width: 1000px;
+    color: #e0e0e0;
+    overflow: hidden;
+}
+.box2{
+    max-width: 500px;
+    background-color: #0D47F7;
+    height: 100%;
+    width: 100%;
+    color: #e0e0e0;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+.ahamay-footer{
+    font-family: Arial, sans-serif;
+    background-color: #0D47F7;
+    color: #ffffff;
+    padding: 60px 20px 20px 20px;
+}
+.footer-container{
+max-width: 1200px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 40px;
+}
+.brand-col{
+grid-column: span 1;
+
+}
+footer.logo{
+
+font-size: 1.0rem;
+font-weight:  800;
+letter-spacing: 2px;
+margin-bottom:  15px;
+}
+
+.footer-bottom{
+    max-width: 1200px;
+    margin: 50px auto 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    text-align: center;
+    font-size:  0.85rem;
+    color: #d1d1d1;
+}
+
+.ahamay-about{
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+.about-card{
+    max-width: 600px;
+    background: #ffffff;
+    padding: 40px;
+    border-left:  8px solid #0D47F7;
+    box-shadow:  0px 4px 15px rgba(0,0,0,0.5)
+}
+.about-card span{
+color: #0D47F7;
+font-weight: bold;
+letter-spacing: 2px;
+font-size: 0.85rem;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.box-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

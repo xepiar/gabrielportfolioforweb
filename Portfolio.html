@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Gabriel, Jerome Edward M. — Web Developer & Programmer crafting clean, responsive, and high-impact digital experiences.">
+    <meta name="keywords"
+        content="Portfolio, Web Developer, HTML, CSS, JavaScript, Database, SQL, Python, Software Engineer, UI/UX, Gabriel, Jerome Edward M.">
+    <meta name="author" content="Gabriel, Jerome Edward M.">
+    <title>Gabriel, Jerome Edward M. — Web Developer & Programmer</title>
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22serif%22 font-weight=%22900%22 fill=%22%23d4af37%22>G</text></svg>">
+
+    <!-- Google Fonts: Editorial Serif & Refined Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body data-theme="dark">
+
+    <!-- Reading Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header" id="header">
+        <div class="nav-container">
+            <a href="#home" class="brand-logo" aria-label="Home">
+                <span class="logo-mark">G</span>
+                <span class="logo-text">GABRIEL<span class="logo-accent">.</span></span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="desktop-nav" aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Nav Actions -->
+            <div class="nav-actions">
+                <div class="status-pill" title="Current Status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Available</span>
+                </div>
+
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle light and dark mode" title="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <a href="#contact" class="btn btn-outline btn-sm desktop-only">Hire Me</a>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button id="mobile-toggle" class="icon-btn mobile-only" aria-label="Toggle navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+            <ul class="mobile-nav-links">
+                <li><a href="#home" class="mobile-link">Home</a></li>
+                <li><a href="#about" class="mobile-link">About</a></li>
+                <li><a href="#skills" class="mobile-link">Skills</a></li>
+                <li><a href="#projects" class="mobile-link">Projects</a></li>
+                <li><a href="#experience" class="mobile-link">Education</a></li>
+                <li><a href="#contact" class="mobile-link">Contact</a></li>
+            </ul>
+            <div class="mobile-drawer-footer">
+                <a href="#contact" class="btn btn-primary w-full">Start a Conversation</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. HOME / HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="hero-glow-bg" aria-hidden="true"></div>
+            <div class="container hero-container">
+
+                <div class="hero-header-badge">
+                    <span class="badge-index">EDITION 2026 // PORTFOLIO</span>
+                    <span class="badge-separator">/</span>
+                    <span class="badge-role">WEB DEVELOPER & PROGRAMMER</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Architecting <span class="serif-italic">clarity</span>, precision &amp; modern digital systems.
+                </h1>
+
+                <p class="hero-description">
+                    I am a software engineer and digital creator crafting responsive web applications, robust backends,
+                    and timeless editorial interfaces that combine high-tier aesthetics with frictionless performance.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Explore Work</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    <a href="#about" class="btn btn-text">Read Bio ↓</a>
+                </div>
+
+                <!-- Metric Editorial Strip -->
+                <div class="hero-metrics-strip">
+                    <div class="metric-item">
+                        <span class="metric-number" data-target="3">3rd</span>
+                        <span class="metric-label">Year BSIT Student</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-number" data-target="5">05</span>
+                        <span class="metric-label">Subject Case Studies</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-number" data-target="100">100%</span>
+                        <span class="metric-label">Academic Dedication</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-number" data-target="5">05</span>
+                        <span class="metric-label">Core Tech Focuses</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 2. ABOUT SECTION -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+
+                <div class="section-tag">
+                    <span class="tag-number">01</span>
+                    <span class="tag-title">ABOUT ME</span>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Left: Portrait Frame -->
+                    <div class="about-portrait-card">
+                        <div class="portrait-wrapper">
+                            <img src="assets/images/avatar.jpg" alt="Gabriel, Jerome Edward M. Portrait"
+                                class="portrait-img" loading="lazy">
+                            <div class="portrait-tag-overlay">
+                                <span class="badge-dot"></span>
+                                <span>Based in Philippines • Remote Worldwide</span>
+                            </div>
+                        </div>
+                        <div class="portrait-footer-info">
+                            <div>
+                                <p class="portrait-name">Gabriel, Jerome Edward M.</p>
+                                <p class="portrait-title">Software Engineer &amp; Designer</p>
+                            </div>
+                            <div class="social-quick-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    aria-label="GitHub" class="social-link-icon">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                                    aria-label="LinkedIn" class="social-link-icon">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Editorial Philosophy & Bio -->
+                    <div class="about-content">
+                        <h2 class="editorial-quote">
+                            “True digital craftsmanship is creating systems so intuitive, fast, and seamless they feel
+                            like second nature.”
+                        </h2>
+
+                        <div class="about-bio-text">
+                            <p>
+                                Hello! I'm Jerome Edward M. Gabriel, a 3rd-year Bachelor of Science in Information Technology
+                                (BSIT 3-1A) student passionate about modern web technologies, database management, and Python programming.
+                            </p>
+                            <p>
+                                My practical engineering experience is built directly upon rigorous academic case studies and laboratory
+                                implementations across different IT subjects — developing interactive user interfaces, structured relational
+                                database schemas, and clean Python scripts. I take pride in writing clean semantic markup, modular responsive CSS, and dynamic JavaScript DOM operations.
+                            </p>
+                        </div>
+
+                        <!-- Pillars Grid -->
+                        <div class="philosophy-grid">
+                            <div class="philosophy-card">
+                                <span class="card-icon">⚡</span>
+                                <h3 class="card-title">Performance-First</h3>
+                                <p class="card-text">Obsessive focus on speed, low bundle sizes, optimized database
+                                    queries, and sub-second load times.</p>
+                            </div>
+                            <div class="philosophy-card">
+                                <span class="card-icon">📐</span>
+                                <h3 class="card-title">Editorial Design</h3>
+                                <p class="card-text">Harmonious typography, crisp hierarchy, and purposeful whitespace
+                                    that puts content and narrative first.</p>
+                            </div>
+                            <div class="philosophy-card">
+                                <span class="card-icon">🔒</span>
+                                <h3 class="card-title">Scalable Architecture</h3>
+                                <p class="card-text">Modular, well-documented codebases built to withstand real-world
+                                    enterprise growth and traffic spikes.</p>
+                            </div>
+                        </div>
+
+                        <!-- Quick Specs Table -->
+                        <div class="quick-specs-table">
+                            <div class="spec-row">
+                                <span class="spec-label">Education</span>
+                                <span class="spec-value">B.S. INFORMATION TECHNOLOGY (BSIT 3-1A)</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Experience</span>
+                                <span class="spec-value">Subject Case Studies &amp; Lab Coursework</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Tech Focus</span>
+                                <span class="spec-value">HTML, CSS, JS, Database &amp; Python</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Languages</span>
+                                <span class="spec-value">Filipino (Tagalog) &amp; English</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Direct Email</span>
+                                <span class="spec-value highlight-accent">jeromedward07@gmail.com</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. SKILLS SECTION -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+
+                <div class="section-tag">
+                    <span class="tag-number">02</span>
+                    <span class="tag-title">TECHNICAL SKILLS</span>
+                </div>
+
+                <div class="section-heading-wrapper">
+                    <h2 class="section-heading">Technical Skills &amp; Competencies</h2>
+                    <p class="section-subheading">Core proficiencies in web development, database management, and Python programming.</p>
+                </div>
+
+                <!-- Skill Filters -->
+                <div class="filter-bar" role="tablist" aria-label="Filter Skills">
+                    <button class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All Skills (05)</button>
+                    <button class="filter-pill" data-filter="frontend" role="tab"
+                        aria-selected="false">Frontend (HTML / CSS / JS)</button>
+                    <button class="filter-pill" data-filter="backend" role="tab" aria-selected="false">Database &amp; Python</button>
+                </div>
+
+                <!-- Skills Grid (HTML, CSS, JS, DATABASE, PYTHON ONLY) -->
+                <div class="skills-grid" id="skills-container">
+
+                    <!-- 1. HTML -->
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-badge">HTML</div>
+                            <span class="skill-level">96%</span>
+                        </div>
+                        <h3 class="skill-name">HTML / HTML5</h3>
+                        <p class="skill-sub">Semantic markup, accessible structures, responsive tables, forms, multimedia integration &amp; SEO best practices.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" style="--percent: 96%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- 2. CSS -->
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-badge">CSS</div>
+                            <span class="skill-level">95%</span>
+                        </div>
+                        <h3 class="skill-name">CSS / CSS3</h3>
+                        <p class="skill-sub">CSS Grid, Flexbox, responsive layouts, media queries, CSS variables, keyframe animations &amp; visual styling.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" style="--percent: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- 3. JS -->
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-badge">JS</div>
+                            <span class="skill-level">92%</span>
+                        </div>
+                        <h3 class="skill-name">JavaScript (JS)</h3>
+                        <p class="skill-sub">DOM manipulation, interactive user interfaces, event listeners, ES6+ features &amp; dynamic frontend logic.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" style="--percent: 92%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- 4. DATABASE -->
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-badge">Database</div>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <h3 class="skill-name">Database Management</h3>
+                        <p class="skill-sub">Relational schema design, SQL CRUD queries, table normalization, primary/foreign keys &amp; data integrity.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" style="--percent: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- 5. PYTHON -->
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-card-top">
+                            <div class="skill-icon-badge">Python</div>
+                            <span class="skill-level">88%</span>
+                        </div>
+                        <h3 class="skill-name">Python</h3>
+                        <p class="skill-sub">Core Python programming, data structures, backend scripting, automation workflows &amp; algorithmic problem solving.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-fill" style="--percent: 88%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Core Focus Areas Strip -->
+                <div class="learning-strip">
+                    <span class="learning-tag">CORE COMPETENCIES:</span>
+                    <div class="learning-chips">
+                        <span class="chip">HTML5 Semantic Design</span>
+                        <span class="chip">CSS3 Responsive Systems</span>
+                        <span class="chip">JavaScript DOM Manipulation</span>
+                        <span class="chip">Relational SQL Database</span>
+                        <span class="chip">Python Scripting &amp; Logic</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. PROJECTS SECTION -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+
+                <div class="section-tag">
+                    <span class="tag-number">03</span>
+                    <span class="tag-title">SELECTED WORKS</span>
+                </div>
+
+                <div class="section-heading-wrapper">
+                    <h2 class="section-heading">Featured Engineering Projects</h2>
+                    <p class="section-subheading">A showcase of bespoke web applications, interactive software, and
+                        architectural solutions.</p>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="filter-bar" role="tablist" aria-label="Filter Projects">
+                    <button class="project-filter-pill active" data-filter="all">All Projects (05)</button>
+                    <button class="project-filter-pill" data-filter="interactive">Interactive &amp; JavaScript</button>
+                    <button class="project-filter-pill" data-filter="showcase">Commercial Showcase</button>
+                    <button class="project-filter-pill" data-filter="academic">Academic Portals</button>
+                </div>
+
+                <!-- Projects Showcase -->
+                <div class="projects-list">
+
+                    <!-- Project 1: Interactive jQuery DOM Engine (GabrielFinalAct3) -->
+                    <article class="project-card" data-category="interactive">
+                        <div class="project-media-col">
+                            <div class="project-image-wrapper" style="background: #c77c1a; display: flex; align-items: center; justify-content: center;">
+                                <img src="assets/images/gabrielfinalact3.png" alt="Interactive jQuery DOM Engine"
+                                    class="project-img" style="object-fit: contain; max-height: 280px; width: 100%; margin: auto;" loading="lazy">
+                                <div class="project-overlay-badge">BSIT Final Act 3</div>
+                            </div>
+                        </div>
+                        <div class="project-info-col">
+                            <div class="project-meta">
+                                <span class="project-year">2026</span>
+                                <span class="project-category-tag">JQUERY DOM MANIPULATION</span>
+                            </div>
+                            <h3 class="project-title">Interactive jQuery DOM Engine</h3>
+                            <p class="project-summary">
+                                An interactive client-side web application engineered with jQuery 3.7.1. Features dynamic DOM style manipulation, mouse gesture listeners (double-click, hover, focus, blur), interactive forms, and animated table hide/show transitions.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">jQuery 3.7.1</span>
+                                <span class="tech-tag">DOM Events</span>
+                                <span class="tech-tag">Folder: GabrielFinalAct3</span>
+                            </div>
+                            <div class="project-action-links">
+                                <a href="GabrielFinalAct3/index.html" target="_blank" class="btn btn-primary btn-sm">
+                                    <span>Open Project</span>
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </a>
+                                <button class="btn btn-secondary btn-sm view-case-study" data-project="final_act3">
+                                    <span>View Details</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Dynamic DOM Event Profile (Gabriel_Final_Act1) -->
+                    <article class="project-card reverse-card" data-category="interactive">
+                        <div class="project-media-col">
+                            <div class="project-image-wrapper" style="background: #121417; display: flex; align-items: center; justify-content: center;">
+                                <img src="Gabriel_Final_Act1/sasuke.jpg" alt="Dynamic DOM Event Profile"
+                                    class="project-img" style="object-fit: cover; max-height: 280px; width: 100%;" loading="lazy">
+                                <div class="project-overlay-badge">BSIT Final Act 1</div>
+                            </div>
+                        </div>
+                        <div class="project-info-col">
+                            <div class="project-meta">
+                                <span class="project-year">2026</span>
+                                <span class="project-category-tag">VANILLA JS EVENT ARCHITECTURE</span>
+                            </div>
+                            <h3 class="project-title">Dynamic DOM Event Profile</h3>
+                            <p class="project-summary">
+                                An interactive profile interface showcasing core vanilla JavaScript event listeners, conditional innerHTML state toggles, dynamic color changes, and input focus background highlights.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Vanilla JS</span>
+                                <span class="tech-tag">Event Listeners</span>
+                                <span class="tech-tag">Folder: Gabriel_Final_Act1</span>
+                            </div>
+                            <div class="project-action-links">
+                                <a href="Gabriel_Final_Act1/profile.html" target="_blank" class="btn btn-primary btn-sm">
+                                    <span>Open Project</span>
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </a>
+                                <button class="btn btn-secondary btn-sm view-case-study" data-project="final_act1">
+                                    <span>View Details</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Ahamay Motorcycles (gabrielact5) -->
+                    <article class="project-card" data-category="showcase">
+                        <div class="project-media-col">
+                            <div class="project-image-wrapper">
+                                <img src="gabrielact5/NMAX-NEW-2.jpg" alt="Ahamay Motorcycles Showcase"
+                                    class="project-img" loading="lazy">
+                                <div class="project-overlay-badge">BSIT Laboratory Act 5</div>
+                            </div>
+                        </div>
+                        <div class="project-info-col">
+                            <div class="project-meta">
+                                <span class="project-year">2026</span>
+                                <span class="project-category-tag">COMMERCIAL SHOWCASE</span>
+                            </div>
+                            <h3 class="project-title">Ahamay Motorcycles Showcase</h3>
+                            <p class="project-summary">
+                                A multi-section automotive and motorcycle showcase website developed for Laboratory Activity 5. Features automatic motorbikes (Yamaha NMAX) and manual motorbikes (Yamaha Sniper), 135-year company heritage story, and custom CSS layouts.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Flexbox</span>
+                                <span class="tech-tag">Automotive Layout</span>
+                                <span class="tech-tag">Folder: gabrielact5</span>
+                            </div>
+                            <div class="project-action-links">
+                                <a href="gabrielact5/Home.html" target="_blank" class="btn btn-primary btn-sm">
+                                    <span>Open Project</span>
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </a>
+                                <button class="btn btn-secondary btn-sm view-case-study" data-project="ahamay">
+                                    <span>View Details</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Student Academic Portal (Gabriel_BSIT31A_ACT3) -->
+                    <article class="project-card reverse-card" data-category="academic">
+                        <div class="project-media-col">
+                            <div class="project-image-wrapper" style="background: #15181c; display: flex; align-items: center; justify-content: center;">
+                                <img src="chambir.png" alt="Student Academic Portal"
+                                    class="project-img" style="object-fit: contain; max-height: 280px; width: auto; margin: auto;" loading="lazy">
+                                <div class="project-overlay-badge">BSIT Laboratory Act 3</div>
+                            </div>
+                        </div>
+                        <div class="project-info-col">
+                            <div class="project-meta">
+                                <span class="project-year">2026</span>
+                                <span class="project-category-tag">ACADEMIC WEB PORTAL</span>
+                            </div>
+                            <h3 class="project-title">Student Personal Portal &amp; Forms</h3>
+                            <p class="project-summary">
+                                A comprehensive multi-page academic website comprising a student home dashboard, student registration form with specialized input fields, official academic grade report table with units and remarks, and personal student profile.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">HTML Tables</span>
+                                <span class="tech-tag">Registration Forms</span>
+                                <span class="tech-tag">Multi-Page Navigation</span>
+                                <span class="tech-tag">Folder: Gabriel_BSIT31A_ACT3</span>
+                            </div>
+                            <div class="project-action-links">
+                                <a href="Gabriel_BSIT31A_ACT3/Home.html" target="_blank" class="btn btn-primary btn-sm">
+                                    <span>Open Project</span>
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </a>
+                                <button class="btn btn-secondary btn-sm view-case-study" data-project="academic_portal">
+                                    <span>View Details</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Student Directory & Journal (GabrielBSIT31A) -->
+                    <article class="project-card" data-category="academic">
+                        <div class="project-media-col">
+                            <div class="project-image-wrapper" style="background: #ffffff; display: flex; align-items: center; justify-content: center;">
+                                <img src="assets/images/gabrielbsit31a.png" alt="Student Directory &amp; Journal Website"
+                                    class="project-img" style="object-fit: contain; max-height: 280px; width: 100%; margin: auto;" loading="lazy">
+                                <div class="project-overlay-badge">BSIT Laboratory Act 2</div>
+                            </div>
+                        </div>
+                        <div class="project-info-col">
+                            <div class="project-meta">
+                                <span class="project-year">2026</span>
+                                <span class="project-category-tag">STUDENT WEB DIRECTORY</span>
+                            </div>
+                            <h3 class="project-title">Jerome's Student Website &amp; Journal</h3>
+                            <p class="project-summary">
+                                Jerome's foundational personal student portal created for BSIT 31A. Contains student information records, academic curriculum expectations, and daily student journal sub-pages with modular cross-linking.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">Hyperlink Architecture</span>
+                                <span class="tech-tag">Structured Lists</span>
+                                <span class="tech-tag">Folder: GabrielBSIT31A</span>
+                            </div>
+                            <div class="project-action-links">
+                                <a href="GabrielBSIT31A/home.html" target="_blank" class="btn btn-primary btn-sm">
+                                    <span>Open Project</span>
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                    </svg>
+                                </a>
+                                <button class="btn btn-secondary btn-sm view-case-study" data-project="student_info">
+                                    <span>View Details</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. EDUCATION SECTION -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="container">
+
+                <div class="section-tag">
+                    <span class="tag-number">04</span>
+                    <span class="tag-title">EDUCATION &amp; BACKGROUND</span>
+                </div>
+
+                <div class="section-heading-wrapper">
+                    <h2 class="section-heading">Education &amp; Academic Status</h2>
+                    <p class="section-subheading">Formal degree program and technical training in Information Technology.</p>
+                </div>
+
+                <!-- Experience Timeline -->
+                <div class="timeline-container">
+
+                    <!-- Education -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <span class="marker-dot education-dot"></span>
+                            <span class="marker-line"></span>
+                        </div>
+                        <div class="timeline-content-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="role-title">Bachelor of Science in Information Technology (BSIT)</h3>
+                                    <p class="role-company">College of Computer Studies / Information Technology</p>
+                                </div>
+                                <span class="role-period">3rd Year Student • Section 3-1A</span>
+                            </div>
+                            <p class="role-desc">
+                                Currently pursuing a BSIT degree with academic focus on web technologies, relational database systems, systems analysis, and Python programming. Completed extensive hands-on case studies and subject activities.
+                            </p>
+                            <div class="role-tags">
+                                <span>BSIT 3-1A</span>
+                                <span>Web Development</span>
+                                <span>Database Systems</span>
+                                <span>Python Programming</span>
+                                <span>Systems Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. CONTACT SECTION -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+
+                <div class="section-tag">
+                    <span class="tag-number">05</span>
+                    <span class="tag-title">START A DIALOGUE</span>
+                </div>
+
+                <div class="contact-grid">
+
+                    <!-- Left: Direct Info & Invitation -->
+                    <div class="contact-info-col">
+                        <h2 class="contact-main-heading">
+                            Have an ambitious vision? <br>
+                            <span class="serif-italic">Let's engineer it.</span>
+                        </h2>
+                        <p class="contact-subtext">
+                            I am currently open for collaborative academic projects, subject case studies, and entry-level technical opportunities. Feel free to reach out directly at <strong style="color: var(--accent-gold);">jeromedward07@gmail.com</strong>.
+                        </p>
+
+                        <div class="contact-methods">
+                            <!-- Email Card -->
+                            <div class="contact-method-card">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Direct Email</span>
+                                    <span class="method-value" id="user-email-text">jeromedward07@gmail.com</span>
+                                </div>
+                                <button id="copy-email-btn" class="copy-btn" aria-label="Copy email address"
+                                    title="Copy Email">
+                                    <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                    <span class="copy-tooltip">Copy</span>
+                                </button>
+                            </div>
+
+                            <!-- Location / Timezone -->
+                            <div class="contact-method-card">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Timezone &amp; Location</span>
+                                    <span class="method-value">UTC+7 (WIB) • Global Remote Friendly</span>
+                                </div>
+                            </div>
+
+                            <!-- Response Time Guarantee -->
+                            <div class="contact-method-card">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                                    </svg>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Response Commitment</span>
+                                    <span class="method-value">Typically replies within 12 business hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links Row -->
+                        <div class="contact-social-row">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill">
+                                <span>GitHub</span>
+                                <span class="arrow-up">↗</span>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                                class="social-pill">
+                                <span>LinkedIn</span>
+                                <span class="arrow-up">↗</span>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-pill">
+                                <span>Twitter / X</span>
+                                <span class="arrow-up">↗</span>
+                            </a>
+                            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer"
+                                class="social-pill">
+                                <span>Dribbble</span>
+                                <span class="arrow-up">↗</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Right: Interactive Contact Form -->
+                    <div class="contact-form-col">
+                        <div class="form-wrapper-card">
+                            <h3 class="form-title">Send a Direct Message</h3>
+                            <p class="form-sub">Fill out the brief details below and I will respond to your inbox.</p>
+
+                            <form id="contact-form" class="contact-form" novalidate>
+                                <div class="form-group-row">
+                                    <div class="form-field">
+                                        <label for="contact-name">Your Name <span class="required">*</span></label>
+                                        <input type="text" id="contact-name" name="name" placeholder="e.g. Jane Doe"
+                                            required>
+                                        <span class="field-error" id="name-error">Please provide your name</span>
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="contact-email">Your Email <span class="required">*</span></label>
+                                        <input type="email" id="contact-email" name="email"
+                                            placeholder="e.g. jane@domain.com" required>
+                                        <span class="field-error" id="email-error">Please enter a valid email
+                                            address</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="contact-service">Topic / Inquired Service</label>
+                                    <select id="contact-service" name="service">
+                                        <option value="web-development">Web Development (HTML / CSS / JS)</option>
+                                        <option value="frontend-ui">Frontend Engineering &amp; UI Systems</option>
+                                        <option value="backend-api">Backend Architecture &amp; Database</option>
+                                        <option value="consulting">Technical Consulting &amp; Code Review</option>
+                                        <option value="other">General Inquiries / Say Hello</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="contact-message">Project Details or Message <span
+                                            class="required">*</span></label>
+                                    <textarea id="contact-message" name="message" rows="5"
+                                        placeholder="Tell me about your project, timeline, and goals..."
+                                        required></textarea>
+                                    <span class="field-error" id="message-error">Please enter a short message</span>
+                                </div>
+
+                                <button type="submit" id="submit-btn" class="btn btn-primary btn-submit w-full">
+                                    <span class="btn-text">Send Message</span>
+                                    <svg class="send-icon" viewBox="0 0 24 24" width="18" height="18" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                    <span class="spinner" aria-hidden="true"></span>
+                                </button>
+
+                                <div id="form-feedback" class="form-feedback-message" role="alert" aria-live="polite">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Case Study Modal Window -->
+    <div id="case-study-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-card">
+            <button id="modal-close" class="modal-close-btn" aria-label="Close Case Study Details">×</button>
+            <div id="modal-content" class="modal-body">
+                <!-- Injected dynamically via script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast-notification" class="toast" role="status" aria-live="polite">
+        <span class="toast-icon">✓</span>
+        <span id="toast-text" class="toast-text">Email copied to clipboard!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#home" class="footer-logo">GABRIEL<span>.</span></a>
+                <p class="footer-copyright">
+                    © <span id="current-year">2026</span> Gabriel, Jerome Edward M. Engineered with deliberate
+                    minimalism and vanilla web
+                    technologies.
+                </p>
+            </div>
+
+            <div class="footer-center">
+                <div class="local-time-card">
+                    <span class="clock-dot"></span>
+                    <span>LOCAL TIME: <span id="local-time-clock">--:--:--</span> (WIB / UTC+7)</span>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll back to top">
+                    <span>Top</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="19" x2="12" y2="5"></line>
+                        <polyline points="5 12 12 5 19 12"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section{
+    background: rgb(230, 195, 195);
+    width: 380px;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+}
+.img{
+    border-radius: 50%;
+    width: 50;
+    height: 50;
+
+}
+.name{
+    color: black solid 20px;
+}
+.list{
+
+}
