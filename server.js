@@ -20,7 +20,7 @@ const MIME_TYPES = {
 const server = http.createServer((req, res) => {
   let reqPath = decodeURI(req.url.split('?')[0]);
   if (reqPath === '/' || reqPath === '') {
-    reqPath = '/Portfolio.html';
+    reqPath = fs.existsSync(path.join(__dirname, 'index.html')) ? '/index.html' : '/Portfolio.html';
   }
 
   const filePath = path.join(__dirname, reqPath);

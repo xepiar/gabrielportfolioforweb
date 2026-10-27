@@ -1,10 +1,13 @@
 {
-  "version": 2,
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/Portfolio.html"
+      "source": "/Portfolio",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/Portfolio.html",
+      "destination": "/index.html"
     }
   ]
 }
